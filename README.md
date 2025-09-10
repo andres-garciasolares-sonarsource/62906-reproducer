@@ -1,6 +1,6 @@
-This is a reproducer for an issue with the cache of the Kotlin analyzer on SonarQube Cloud, reported on ticket [62906](https://sonarsourcehelp.zendesk.com/agent/tickets/62906).
+This is a reproducer for an issue with the cache of the Kotlin analyzer on SonarQube Cloud, reported on ticket 62906.
 
-1. Create a new project in https://sc-staging.io.
+1. Create a new project in SQC/staging.
 2. Run a main branch analysis.
 ```bash
 sonar-scanner -Dsonar.host.url=https://sc-staging.io -Dsonar.token=<token> -Dsonar.organization=<org> -Dsonar.projectKey=<key> -X &> log-master
